@@ -1,0 +1,23 @@
+.btn-action {
+    background-color: #99BC85;
+    color: white;
+}
+
+.btn-action:hover {
+    background-color: #609966;
+    color: white;
+    font-weight:500;
+}
+
+.btn-navigation-icon:hover {
+    color: #609966;
+}
+
+.btn-header-icon svg{
+    height: 26px;
+}
+
+.btn-header-icon svg:hover {
+    height: 30px;
+    color: #609966
+}

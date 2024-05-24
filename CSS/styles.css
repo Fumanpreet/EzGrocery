@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-bar .navbar {
+    padding: 0;
+    /* background-color: rgba(238, 227, 227, 0.231); */
+}
+
+.navigation-bar p {
+    margin-bottom: 0.3rem;
+}
+
+.navigation-bar .container-fluid {
+    padding-left: 4vw;
+}
+
+.navigation-bar .nav-link svg {
+    height: 26px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.navigation-bar .navbar-collapse {
+    margin-left: 2vw;
+}
+
+.navigation-bar .navbar-collapse .nav-item {
+    margin: auto;
+}
+
+.slider img {
+    height: 50vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.city-stores {
+    max-width: 88vw;
+    margin: auto;
+}
+
+.city-stores .city-stores-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.city-stores .cards {
+    display: flex;
+    overflow: scroll;
+    gap: 20px;
+}
+
+.city-stores .store-card {
+    display: inline-flex;
+    min-width: 15vw;
+    flex-direction: column;
+    border: .5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.city-stores .store-card-img {
+    height: 100px;
+    object-fit: cover;
+}
+
+.city-stores .store-card-body .distance {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.city-stores .store-name {
+    padding-top: 4px;
+    font-weight: bold;
+    margin: 0;
+    font-size: 17px;
+}
+
+.city-stores .opening-time {
+    float: left;
+}
+
+.city-stores .closing-time {
+    float: right;
+}
+
+.food-items {
+    max-width: 88vw;
+    margin: auto;
+}
+
+.food-items .container {
+    display: grid;
+    grid-template-columns: 23vw 60.3vw;
+    grid-template-rows: 35vh 35vh 35vh;
+    margin: auto;
+    gap: 2vh 3vw;
+}
+
+.food-items li {
+    list-style: none;
+}
+
+.food-items .accordion {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.food-items .accordion a {
+    text-decoration: none;
+    color: black;
+}
+
+.food-items .accordion a:hover {
+    color: #609966;
+}
+
+.food-items .category-list {
+    margin-bottom: 0;
+}
+
+.arrival-items-body {
+    display: flex;
+    overflow: scroll;
+    gap: 10px;
+}
+
+.arrival-item {
+    display: inline-flex;
+    flex-direction: column;
+    border: .5px solid black;
+    border-radius: 5px;
+    min-width: 10vw;
+    max-width: 11vw;
+}
+
+.arrival-item-container {
+    text-align: center;
+}
+
+.arrival-item-container-text {
+    font-size: 1.05rem;
+}
+.arrival-item-container-price {
+    font-size: 1.30rem;
+    color: #609966;
+    font-weight: 650;
+}
+/* .arrival-item-container-from-store {
+    font-size: 1.05rem;
+    margin-bottom: .5rem;
+    float: ;
+} */
+
+.food-items .new-arrivals .arrival-card-img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.best-deal-of-day .featurette {
+    display: inline-flex;
+    margin: 3px;
+    padding: 10px 0px 10px 0px;
+}
+.best-deal-of-day .deal-left-button, .deal-right-button{
+    align-content: center;
+}
+
+.best-deal-of-day .deal-poster{
+    display: inline-flex;
+    border: 2px solid #609966;
+    padding: 20px;
+}
+
+.new-arrivals {
+    margin-top: 20px;
+}
+
+.new-arrivals .category-title {
+    display: inline;
+}
+
+.new-arrivals a {
+    float: right;
+}
+
+.arrival-items-body {
+    margin-top: 10px;
+}
+
+.best-deal-of-day {
+    margin-top: 10px;
+}
+
+.best-deal-of-day img {
+    height: 200px;
+    padding-left: 80px;
+}
+
+.best-deal-of-day .category-title {
+    display: inline;
+}
+
+/* .best-deal-of-day .right-best-deal {
+    position: relative;
+    top: 140px;
+    left: 493px;
+} */
+
+.best-deal-of-day svg {
+    height: 50px;
+}
+
+/* .best-deal-of-day .left-best-deal {
+    position: relative;
+    top: 140px;
+    right: 320px;
+} */
+
+.footer .footer-logo a {
+    display: block;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.footer .footer-logo p {
+    text-align: center;
+}
+
+.footer .footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-links .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
