@@ -10,57 +10,7 @@
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="../CSS/utils.css">
     <link rel="stylesheet" href="../CSS/responsive.css">
-
-    <script> 
-        function ValidateEmail(input) {
-
-            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-          
-            if (input.match(validRegex)) { 
-            
-              return true;
-          
-            } else {
-              alert("Invalid email address!");
-              return false;
-          
-            }
-          
-          }
-        async function validation(){
-            let email = document.getElementById("email").value;
-            let password = document.getElementById("inputPassword5").value;
-            // check for input validation whether email id is correct or not. 
-            // will be using regex 
-            debugger;
-            const email_confirm = ValidateEmail(email);
-              if (email_confirm){
-                /// go for password check 
-                const validatePassword = (password) => {
-                    let regex =  "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,15}$/";
-                    return password.match(regex);
-                }
-                if (validatePassword){
-                    var x = document.getElementById("snackbar");
-
-                    // Add the "show" class to DIV
-                    x.className = "show";
-                    // After 3 seconds, remove the show class from DIV
-                    setTimeout(await function(){ x.className = x.className.replace("show", ""); }, 3000);
-                    // changing the className from show to "" . to change the visibility in the css. 
-                    // now we have to call password encryption method and have to store it in database. 
-                    return; 
-                }
-                else{
-                    alert("invalid password");
-                }
-              }
-              else {
-                    alert("invalid email");
-              }
-        }
-       
-    </script>
+    <script src = "EzGrocery/script/password_verification.js"></script>
 </head>
 
 <body>
