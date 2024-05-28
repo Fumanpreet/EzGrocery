@@ -3,23 +3,6 @@
 // instead of ciphers we will be using oneway hash functions. 
 
 
-// const express = require('express');
-// const app = express();
-
-// app.use(express.static('/database', {
-//     setHeaders: (res, path, stat) => {
-//         if (path.endsWith('.js')) {
-//             res.set('Content-Type', 'text/javascript');
-//         }
-//     }
-// }));
-
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//     console.log(`Server is running on http://localhost:${PORT}`);
-// });
-
-
 // const pg = require('pg');
 //     // creating client connection to the database. 
 // const { Client } = pg
@@ -39,9 +22,9 @@ function ValidateEmail(input) {
   
   }
 function validation(){
-    console.log("entered validation area");
     let email = document.getElementById("email").value;
     let password = document.getElementById("inputPassword5").value;
+
     // check for input validation whether email id is correct or not. 
     // will be using regex 
     debugger;
@@ -61,7 +44,7 @@ function validation(){
             setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
             // changing the className from show to "" . to change the visibility in the css. 
             // now we have to call password encryption method and have to store it in database. 
-            client_verified(email,password);
+            // client_verified(email,password);
             return; 
         }
         else{
