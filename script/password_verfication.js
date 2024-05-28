@@ -1,9 +1,7 @@
 // reference 
 // https://www.youtube.com/watch?v=inEhzp3nD0M&list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt&index=48
 // instead of ciphers we will be using oneway hash functions. 
-// api key for google maps -> AIzaSyAbtwnjBod07KQdWUeTEKoRvgx96TFbQhg
 
-// import { Loader } from "@googlemaps/js-api-loader"
 
 // const express = require('express');
 // const app = express();
