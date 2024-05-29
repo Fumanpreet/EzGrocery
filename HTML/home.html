@@ -35,12 +35,13 @@
                     </div>
 
                     <div class="col-middle customer-buttons">
-                        <a href="#" class="btn btn-header-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-basket-fill"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z" />
-                            </svg>
+
+                        <a href="#" class="btn btn-header-icon" id="location-button-header" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasLocation"
+                            aria-controls="offcanvasLocation">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                              </svg>
                         </a>
 
                         <button class="btn btn-action rounded-pill px-3" type="button" data-bs-toggle="offcanvas"
@@ -79,11 +80,20 @@
                                     </div>
 
                                     <button class="w-100 btn btn-action btn-lg my-3" type="submit">Login</button>
+                                    <button class="w-100 btn btn-action btn-lg" type="submit">Sign-up</button>
                                 </form>
                             </div>
                         </div>
 
-                        <a href="signup.html" class="btn btn-action rounded-pill px-3">Sign-up</a>
+                        <!-- <a href="signup.html" class="btn btn-action rounded-pill px-3">Sign-up</a> -->
+                        <a href="#" class="btn btn-header-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-basket-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z" />
+                            </svg>
+                        </a>                        
+
                     </div>
 
                     <!-- Location Side Window Pop Starts here  -->
@@ -268,8 +278,8 @@
                     </ul>
                 </div>
 
-                <a href="#" class="nav-link btn-navigation-icon px-2" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasLocation" aria-controls="offcanvasLocation">
+                <a href="#" class="nav-link btn-navigation-icon px-2" id="location-button-navigationBar" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasLocation" aria-controls="offcanvasLocation">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt"
                         viewBox="0 0 16 16">
                         <path
@@ -303,7 +313,7 @@
                             EzGrocery! Our
                             website search engine scours nearby stores to find you the hottest deals on all your
                             must-haves.</p>
-                        <button type="button" class="btn btn-action mt-4">Checkout Now !</button>
+                        <button type="button" class="btn btn-action slider-button">Checkout Now !</button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -316,7 +326,7 @@
                             area! With EzGrocery, simply select your location, and we'll find you the hottest deals from
                             nearby
                             stores, ensuring you get the most bang for your buck.</p>
-                        <button type="button" class="btn btn-action mt-4">Select Location</button>
+                        <button type="button" class="btn btn-action slider-button">Select Location</button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -332,7 +342,7 @@
                         <p class="carousel-paragraph fs-5 mt-3 text-capitalize">Don't miss out – sign up now and let the
                             savings
                             begin!</p>
-                        <button type="button" class="btn btn-action mt-4">Sign-up today</button>
+                        <button type="button" class="btn btn-action slider-button">Sign-up today</button>
                     </div>
                 </div>
             </div>
@@ -661,7 +671,7 @@
             <div class="new-arrivals">
                 <div class="arrival-items-head">
                     <h3 class="category-title my-4">Fruits & vegetables</h3>
-                    <a class="btn btn-action site-button" href="..." role="button">View All</a>
+                    <a class="btn btn-action" href="..." role="button">View All</a>
                 </div>
 
                 <div class="arrival-items-body">
@@ -751,7 +761,7 @@
             <div class="new-arrivals">
                 <div class="arrival-items-head">
                     <h3 class="category-title my-4">New Arrivals</h3>
-                    <a class="btn btn-action site-button" href="..." role="button">View All</a>
+                    <a class="btn btn-action" href="..." role="button">View All</a>
                 </div>
 
                 <div class="arrival-items-body">
@@ -852,9 +862,9 @@
                     </div>
                     <div class="deal-poster">
                         <div class="col-md-7">
-                            <h2 class="featurette-heading fw-normal lh-1"> <span class="text-body-secondary">Dairyland
-                                    3.25% Homogenized Milk, 4 L</span></h2>
-                            <p class="lead" style="font-weight: bolder; font-size: 45px;"><strong>$6.11</strong> |
+                            <h2 class="poster-product-text"> <span class="text-body-secondary">Dairyland
+                                    3.25% Homogenized Milk, 4L</span></h2>
+                            <p class="poster-price-text"><strong>$6.11</strong> |
                                 15¢/100ml
                             </p>
                             <a class="btn btn-action site-button" href="..." role="button" ;">+ Add</a>

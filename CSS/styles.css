@@ -38,6 +38,10 @@
     filter: brightness(0.6);
 }
 
+.slider .slider-button {
+    margin-top: 0.8rem;
+}
+
 .city-stores {
     max-width: 88vw;
     margin: auto;
@@ -99,6 +103,7 @@
     grid-template-columns: 23vw 60.3vw;
     grid-template-rows: 35vh 35vh 35vh;
     margin: auto;
+    justify-content: center;
     gap: 2vh 3vw;
 }
 
@@ -199,7 +204,7 @@
 
 .best-deal-of-day img {
     height: 200px;
-    padding-left: 80px;
+    padding-left: 5vw;
 }
 
 .best-deal-of-day .category-title {
@@ -212,6 +217,11 @@
     left: 493px;
 } */
 
+.best-deal-of-day .deal-poster .poster-price-text {
+    font-weight: bolder; 
+    font-size: 44px;
+}
+
 .best-deal-of-day svg {
     height: 50px;
 }
@@ -221,6 +231,10 @@
     top: 140px;
     right: 320px;
 } */
+
+.footer .container {
+    margin-top: 5vh;
+}
 
 .footer .footer-logo a {
     display: block;
