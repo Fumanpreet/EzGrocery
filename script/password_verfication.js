@@ -6,7 +6,6 @@
 // const pg = require('pg');
 //     // creating client connection to the database. 
 // const { Client } = pg
-
 function ValidateEmail(input) {
 
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -44,7 +43,7 @@ function validation(){
             setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
             // changing the className from show to "" . to change the visibility in the css. 
             // now we have to call password encryption method and have to store it in database. 
-            // client_verified(email,password);
+            client_verified(email,password);
             return; 
         }
         else{
@@ -58,9 +57,10 @@ function validation(){
 
 
 async function client_verified(email_id,passw){
-    const client = new Client()
-    await client.connect() // making the connection. 
-    alert("connected to postgre sql");
+    // facing error here. 
+    // const client = new Client()
+    // await client.connect() // making the connection. 
+    debugger;
     var password_hash = password_encryption(email_id,passw) // function testing 
     const res = await client.query("CREATE TABLE IF NOT EXISTS login (email varchar(255), hash varchar(255)) "); // will be using email  as an identifier
     // trying to prevent sql injection attack.
@@ -71,49 +71,23 @@ async function client_verified(email_id,passw){
 }
 
 // running client queries 
+
 // password hash --> 
 // we will be using salt + pepper to increase t he security. 
 function password_encryption(email,password){
-    const bcrypt = require("bcryptjs");
-    const saltRounds = 10;
-    bcrypt.genSalt(saltRounds, async (err, salt) => {  // making it asynchronous. 
-        if (err) {
-            // Handle error
-            console.error("Error hashing password:", err);
-            return;
-        }
-        else {
-            // Salt generation successful, proceed to hash the password
-            secure_hash = await bcrypt.hash(password,salt);
-        }
-        console.log(secure_hash);  // working password hash .
-        return secure_hash;
-        });// bcrypt manages storing salt at its own
+    
+  const saltRounds = 10;
+  bcrypt.genSalt(saltRounds, async (err, salt) => {  // making it asynchronous. 
+      if (err) {
+          // Handle error
+          console.error("Error hashing password:", err);
+          return;
+      }
+      else {
+          // Salt generation successful, proceed to hash the password
+          secure_hash = await bcrypt.hash(password,salt);
+      }
+      console.log(secure_hash);  // working password hash .
+      return secure_hash;
+      });// bcrypt manages storing salt at its own
 }
-
-
-
-
-
-
-
-// function stores_location(){
-//     let map = new google.maps.map({center : {
-//         lat: 53.5461,long: 113.4937
-//     }})};
-//     const loader = new Loader({
-//         apiKey: "AIzaSyAbtwnjBod07KQdWUeTEKoRvgx96TFbQhg",
-//         version: "weekly",
-//         ...additionalOptions,
-//       });
-      
-//       loader.load().then(async () => {
-//         const { Map } = await google.maps.importLibrary("maps");
-      
-//         map = new Map(document.getElementById("map"), {
-//           center: { lat: 53.5461, lng: 113.4937 },
-//           zoom: 8,
-//         });
-//       });
-// }
-// stores_location();
