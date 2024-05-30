@@ -2,6 +2,8 @@ const { dir } = require("console");
 const express = require("express");
 const path = require("path");
 
+var fs = require('fs');
+
 var router = express.Router();
 const app = express();
 const port = 3001;

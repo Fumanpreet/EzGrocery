@@ -6,6 +6,7 @@
 // const pg = require('pg');
 //     // creating client connection to the database. 
 // const { Client } = pg
+const bcrypt = require("bcrypt.js");
 function ValidateEmail(input) {
 
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
