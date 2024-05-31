@@ -1,8 +1,442 @@
-@media (max-width: 992px) {
+@media (max-width: 1350px) {
+    .new-arrivals .arrival-item-container-text {
+        margin-bottom: .3rem;
+    }
+
+    .new-arrivals .arrival-item-container-price {
+        margin-bottom: .3rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .best-deal-of-day .deal-poster {
+        padding: 18px;
+    }
+
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 41px;
+    }
+
+    .best-deal-of-day .deal-poster .poster-product-text {
+        font-size: 1.9rem;
+    }
+
+    .best-deal-of-day img {
+        height: 190px;
+    }
+
+    .new-arrivals .arrival-item-container-text {
+        margin-bottom: .2rem;
+    }
+
+    .new-arrivals .arrival-item-container-price {
+        margin-bottom: .2rem;
+    }
+}
+  
+@media (max-width: 1210px) {
+    .best-deal-of-day img{
+        padding-left: 4.3vw;
+    }
+
+    .arrival-item {
+        min-width: 11vw;
+        max-width: 12vw;
+    }
+
+    /* .food-items .accordion-header {
+        padding: 0.5px;
+    } */
+}
+
+@media (max-width: 1185px) {
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 38px;
+    }
+    .best-deal-of-day .deal-poster .poster-product-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .arrival-item {
+        min-width: 12vw;
+        max-width: 13vw;
+    }
+
+    .food-items .new-arrivals .arrival-card-img {
+        height: 147px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1115px) {
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 36px;
+    }
+
+    .best-deal-of-day .deal-poster .poster-product-text {
+        font-size: 1.6rem;
+    }
+
+    .best-deal-of-day img {
+        height: 180px;
+    }
+
+    .food-items .new-arrivals .arrival-card-img {
+        height: 145px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1070px) {
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 34px;
+    }
+
+    .best-deal-of-day img{
+        padding-left: 4.0vw;
+    }
+
+    .food-items .new-arrivals .arrival-card-img {
+        height: 140px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1050px) {
+    .best-deal-of-day img{
+        padding-left: 3.4vw;
+    }
+
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 31px;
+    }
+
+    .best-deal-of-day .deal-poster .poster-product-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1020px) {
+    .food-items .new-arrivals .arrival-card-img {
+        height: 137px;
+        object-fit: cover;
+    }
+
+    .best-deal-of-day img{
+        padding-left: 2.7vw;
+    }
+
+}
+
+@media (min-width: 992px) {
+    #location-button-header {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
     .col-middle {
         flex: 0 0 auto;
         width: 100%;
         text-align: center;
     }
+
+    .arrival-item {
+        min-width: 13vw;
+        max-width: 14vw;
+    }
+
+    .food-items .new-arrivals .arrival-card-img {
+        height: 134px;
+        object-fit: cover;
+    }
+
+    .best-deal-of-day img{
+        padding-left: 1.8vw;
+    }
+
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 30px;
+    }
+
+    #location-button-navigationBar {
+        display: none;
+    }
+
+    #location-button-header {
+        height: 40px;
+        display: inline-flex;
+        margin: auto;
+    }
+
+    .slider .carousel-item .carousel-caption h1 {
+        font-size: 35px;
+    }
+
+    .slider .carousel-item .carousel-caption .carousel-paragraph {
+        font-size: 19px !important;
+    }
 }
-  
+
+@media (max-width: 950px) {
+
+    .col-middle {
+        flex: 0 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .arrival-item {
+        min-width: 13vw;
+        max-width: 14vw;
+    }
+
+    .food-items .new-arrivals .arrival-card-img {
+        height: 134px;
+        object-fit: cover;
+    }
+
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 28px;
+    }
+
+    .best-deal-of-day .deal-poster .poster-product-text {
+        font-size: 1.4rem;
+    }
+
+    .best-deal-of-day img{
+        padding-left: 1.5vw;
+    }
+
+    .best-deal-of-day img {
+        height: 170px;
+    }
+
+    .slider .carousel-item .carousel-caption h1 {
+        font-size: 34px;
+    }
+
+    .slider .carousel-item .carousel-caption .carousel-paragraph {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 895px) {
+
+    .best-deal-of-day img {
+        height: 160px;
+    }
+
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 26px;
+    }
+
+    .best-deal-of-day .deal-poster .poster-product-text {
+        font-size: 1.2rem;
+    }
+
+    .city-stores .store-card {
+        min-width: 16vw;
+    }
+
+    .slider .carousel-item .carousel-caption h1 {
+        font-size: 33px;
+    }
+
+    .slider .carousel-item .carousel-caption .carousel-paragraph {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .food-items .new-arrivals .arrival-card-img {
+        height: 125px;
+        object-fit: cover;
+    }
+
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 25px;
+    }
+
+    .best-deal-of-day img{
+        padding-left: 0.65vw;
+    }
+
+    .best-deal-of-day img {
+        height: 160px;
+    }
+
+    .city-stores .store-card {
+        min-width: 17vw;
+    }
+
+    .slider .carousel-item .carousel-caption h1 {
+        font-size: 31px;
+    }
+
+    .slider .carousel-item .carousel-caption .carousel-paragraph {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-width: 820px) {
+    .food-items .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .arrival-item {
+        min-width: 16vw;
+        max-width: 17vw;
+    }
+
+    .best-deal-of-day img{
+        padding-left: 7.0vw;
+    }
+
+    .food-items .new-arrivals .arrival-card-img {
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 34px;
+    }
+
+    .footer .container {
+        margin-top: 3vh;
+    }
+
+    .best-deal-of-day img {
+        height: 170px;
+    }
+
+    .city-stores .store-card {
+        min-width: 18vw;
+    }
+
+    .slider .carousel-item .carousel-caption h1 {
+        font-size: 29px;
+    }
+
+    .slider .carousel-item .carousel-caption .carousel-paragraph {
+        font-size: 14.5px !important;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .best-deal-of-day img{
+        padding-left: 4.0vw;
+    }
+
+    .food-items .new-arrivals .arrival-card-img {
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 30px;
+    }
+
+    .best-deal-of-day img {
+        height: 165px;
+    }
+
+    .city-stores .store-card {
+        min-width: 18vw;
+    }
+
+    .city-stores .store-name {
+        font-size: 16px;
+    }
+
+    .city-stores .store-card-body .distance {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 730px) {
+
+    .city-stores .store-card {
+        min-width: 18.5vw;
+    }
+
+    .city-stores .store-name {
+        font-size: 16px;
+    }
+
+    .city-stores .store-card-body .distance {
+        font-size: 13px;
+    }
+
+    .city-stores .store-card-img {
+        height: 85px;
+        object-fit: cover;
+    }
+
+    .city-stores .store-name {
+        font-size: 15px;
+    }
+
+    .city-stores .store-card-body .distance {
+        font-size: 12px;
+    }
+
+    .slider .carousel-item .carousel-caption h1 {
+        font-size: 28px;
+    }
+
+    .slider .slider-button {
+        margin-top: 0.6rem;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .city-stores .store-card {
+        min-width: 19.5vw;
+    }
+
+    .city-stores .store-card-body .distance {
+        display: none;
+    }
+}
+
+@media (max-width: 645px) {
+
+    .city-stores .store-card {
+        min-width: 20.5vw;
+    }
+}
+
+@media (max-width: 645px) {
+
+    .city-stores .store-card {
+        min-width: 20.5vw;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .city-stores .store-card {
+        min-width: 22vw;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .city-stores .store-card {
+        min-width: 24vw;
+    }
+
+    .slider .slider-button {
+        margin-top: 0.3rem;
+    }
+
+    .slider .carousel-item .carousel-caption h1 {
+        font-size: 26px;
+    }
+}

@@ -14,6 +14,7 @@
 
 .navigation-bar .container-fluid {
     padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 .navigation-bar .nav-link svg {
@@ -35,6 +36,10 @@
     height: 50vh;
     object-fit: cover;
     filter: brightness(0.6);
+}
+
+.slider .slider-button {
+    margin-top: 0.8rem;
 }
 
 .city-stores {
@@ -96,8 +101,9 @@
 .food-items .container {
     display: grid;
     grid-template-columns: 23vw 60.3vw;
-    grid-template-rows: 35vh 35vh 35vh;
+    grid-template-rows: 30% 30% 30%;
     margin: auto;
+    justify-content: center;
     gap: 2vh 3vw;
 }
 
@@ -121,6 +127,10 @@
 
 .food-items .category-list {
     margin-bottom: 0;
+}
+
+.arrival-items-head {
+    margin-bottom: 17px;
 }
 
 .arrival-items-body {
@@ -198,7 +208,7 @@
 
 .best-deal-of-day img {
     height: 200px;
-    padding-left: 80px;
+    padding-left: 5vw;
 }
 
 .best-deal-of-day .category-title {
@@ -211,6 +221,11 @@
     left: 493px;
 } */
 
+.best-deal-of-day .deal-poster .poster-price-text {
+    font-weight: bolder; 
+    font-size: 44px;
+}
+
 .best-deal-of-day svg {
     height: 50px;
 }
@@ -220,6 +235,10 @@
     top: 140px;
     right: 320px;
 } */
+
+.footer .container {
+    margin-top: 5vh;
+}
 
 .footer .footer-logo a {
     display: block;

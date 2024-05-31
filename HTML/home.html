@@ -45,11 +45,9 @@
                         </a>
 
                         <button class="btn btn-action rounded-pill px-3" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >Login</button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                            aria-labelledby="offcanvasRightLabel">
+
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Please Login</h5>
+                                <h5 class="offcanvas-title" id="offcanvasLoginLabel">Please Login</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
@@ -66,13 +64,6 @@
                                             </div>
                                         </div>
 
-                                        <!-- <div class="col-12">
-                                        <label for="address" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="address" placeholder="************" required="">
-                                        <div class="invalid-feedback">
-                                          Please enter your shipping address.
-                                        </div>
-                                      </div> -->
                                         <div class="col-12">
                                             <label for="inputPassword5" class="form-label">Password</label>
                                             <input type="password" id="inputPassword5" class="form-control"
@@ -84,7 +75,6 @@
                                                 must not contain spaces, special characters, or emoji.
                                             </div>
                                         </div>
-
                                     </div>
 
                                     <button class="w-100 btn btn-action btn-lg my-3" type="submit" onclick= "validation()">Login</button>
@@ -95,6 +85,78 @@
 
                         <a href="signup.html" class="btn btn-action rounded-pill px-3">Sign-up</a>
                     </div>
+
+                    <!-- Location Side Window Pop Starts here  -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLocation"
+                        aria-labelledby="offcanvasLocationLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasLocationLabel">Please Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-12">
+                                    <label for="validationCustom01" class="form-label">Country</label>
+                                    <select class="form-select" id="validationCustom01" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>United States</option>
+                                        <option>Canada</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid state.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="validationCustom02" class="form-label">City</label>
+                                    <select class="form-select" id="validationCustom02" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Edmonton</option>
+                                        <option>Toronto</option>
+                                        <option>Vancouver</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid state.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationCustom03" class="form-label">State</label>
+                                    <select class="form-select" id="validationCustom03" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option>Alberta</option>
+                                        <option>British Colombia</option>
+                                        <option>Ontario</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid state.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationCustom04" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="validationCustom04" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid zip.
+                                    </div>
+                                </div>
+                                <!-- <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Agree to terms and conditions
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                 </header>
             </div>
         </header>
@@ -104,14 +166,6 @@
     <section class="navigation-bar">
         <nav class="navbar navbar-expand-lg rounded" aria-label="Eleventh navbar example">
             <div class="container-fluid mx-5">
-                <!-- <a href="#" class="nav-link btn-navigation-icon spx-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list-ul"
-                        viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
-                    </svg>
-                    <p>All Categories</p>
-                </a> -->
                 <div class="dropdown">
                     <a class="nav-link btn-navigation-icon spx-2" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -213,6 +267,17 @@
                         </li>
                     </ul>
                 </div>
+
+                <a href="#" class="nav-link btn-navigation-icon px-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasLocation" aria-controls="offcanvasLocation">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                    <p>Location</p>
+                </a>
             </div>
         </nav>
     </section>
@@ -386,6 +451,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Food items / Categories -->
     <section class="food-items">
@@ -770,7 +836,7 @@
                         <a class="btn btn-action site-button" href="..." role="button">+ Add</a>
                     </div> -->
                 </div>
-            </div>            
+            </div>
 
             <div class="best-deal-of-day">
                 <h2 class="category-title">Best Deals of the Day</h2>
