@@ -134,6 +134,14 @@
     #location-button-header {
         display: none;
     }
+
+    .header .col-middle customer-buttons {
+        margin-bottom: 12px;
+    }
+
+    .navigation-bar > div {
+        margin-bottom: 6px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -177,6 +185,14 @@
 
     .slider .carousel-item .carousel-caption .carousel-paragraph {
         font-size: 19px !important;
+    }
+
+    .header .customer-buttons {
+        margin-bottom: 6px;
+    }
+
+    .navigation-bar .navbar {
+        margin-bottom: 6px;
     }
 }
 
@@ -410,12 +426,10 @@
     .city-stores .store-card {
         min-width: 20.5vw;
     }
-}
 
-@media (max-width: 645px) {
-
-    .city-stores .store-card {
-        min-width: 20.5vw;
+    .arrival-item {
+        min-width: 22%;
+        max-width: 23%;
     }
 }
 
@@ -423,6 +437,11 @@
 
     .city-stores .store-card {
         min-width: 22vw;
+    }
+
+    .arrival-item {
+        min-width: 23%;
+        max-width: 24%;
     }
 }
 
@@ -439,4 +458,130 @@
     .slider .carousel-item .carousel-caption h1 {
         font-size: 26px;
     }
+
+    .flex-sm-row {
+        flex-direction: column !important;
+        align-items: center;
+    }
 }
+
+@media (max-width: 555px) {
+
+    .best-deal-of-day .deal-poster {
+        display: block;
+    }
+    .best-deal-of-day img {
+        padding-left: 25%;
+    }
+}
+
+@media (max-width: 555px) {
+
+    .best-deal-of-day .deal-poster .poster-product-text {
+        font-size: 1.1rem;
+    }
+
+    best-deal-of-day .deal-poster .poster-price-text {
+        font-size: 25px;
+    }
+
+    .best-deal-of-day .deal-poster {
+        padding: 15px 5px 0px 5px;
+    }
+
+    .arrival-item {
+        min-width: 25%;
+        max-width: 26%;
+    }
+
+    .food-items .category-title {
+        font-size: 22px;
+    }
+
+    .new-arrivals a {
+        float: right;
+    }
+
+    .my-4 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .city-stores .store-card {
+        min-width: 28%;
+    }
+}
+
+@media (max-width: 440px) {
+    .best-deal-of-day img {
+        height: 150px;
+    }
+
+    .arrival-item {
+        min-width: 27%;
+        max-width: 28%;
+    }
+
+    .city-stores .store-card {
+        min-width: 32%;
+    }
+
+    .footer .footer-links .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .footer .footer-links .nav .nav-item a{
+        margin-bottom: 7px;
+    }
+}
+
+@media (max-width: 385px) {
+    .best-deal-of-day img {
+        padding-left: 15%;
+    }
+    
+    .food-items .category-title {
+        font-size: 20px;
+    }
+
+    .my-4 {
+        margin-top: .5rem !important;
+        margin-bottom: .5rem !important;
+    }
+
+    .arrival-item {
+        min-width: 30%;
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 340px) {
+    .arrival-items-head > a {
+        float: none;
+        display: block;
+        margin: 5px; 
+    }
+
+    .arrival-item {
+        min-width: 40%;
+        max-width: 40%;
+    }
+}
+
+
+
+
+/* @media (min-height: 1350px) {
+
+    .slider img {
+        height: 30vh;
+    }
+}
+
+@media (min-height: 850px) {
+
+    /* .slider img {
+        height: 30vh;
+    } 
+} */

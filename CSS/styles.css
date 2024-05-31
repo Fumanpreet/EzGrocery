@@ -33,7 +33,7 @@
 }
 
 .slider img {
-    height: 50vh;
+    height: 400px;
     object-fit: cover;
     filter: brightness(0.6);
 }
@@ -101,10 +101,10 @@
 .food-items .container {
     display: grid;
     grid-template-columns: 23vw 60.3vw;
-    grid-template-rows: 35vh 35vh 35vh;
+    grid-template-rows: 30% 30% 30%;
     margin: auto;
     justify-content: center;
-    gap: 2vh 3vw;
+    gap: 4% 3vw;
 }
 
 .food-items li {
@@ -127,6 +127,10 @@
 
 .food-items .category-list {
     margin-bottom: 0;
+}
+
+.arrival-items-head {
+    margin-bottom: 16px;
 }
 
 .arrival-items-body {
@@ -184,6 +188,7 @@
 
 .new-arrivals {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .new-arrivals .category-title {
@@ -208,7 +213,7 @@
 }
 
 .best-deal-of-day .category-title {
-    display: inline;
+    display: block;
 }
 
 /* .best-deal-of-day .right-best-deal {
