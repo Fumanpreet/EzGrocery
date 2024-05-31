@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Check for geolocation support
+    document.getElementById("access_current_location").addEventListener("click",function(){
+        // Check for geolocation support
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(store_info_fetch);
+        console.log("got the location");
+        document.getElementById("close_location").click();
     } else {
         // If geolocation is not supported, show snackbar
+        // alert("geolocation not supported");
         var snackbar = document.getElementById("location_snackbar");
         snackbar.className = "show";
         setTimeout(function() {
@@ -11,25 +15,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 3000);
     }
 
+    })
     // Add event listener to login button
     document.getElementById("login_button").addEventListener("click", function() {
         validation();
     });
 
     // Add event listener to location button
-    document.getElementById("select_location").addEventListener("click", function() {
-        // showing up a window for user location.. 
-        console.log("inside function");
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                store_info_fetch,
-                handleLocationError,
-                { enableHighAccuracy: true } // Optional: Enable high accuracy mode
-            );
-        } else {
-            console.log("Geolocation is not supported by this browser.");
-        }
-    });
+//     document.getElementById("select_location").addEventListener("click", function() {
+//         // showing up a window for user location.. 
+//         console.log("inside function");
+//         if (navigator.geolocation) {
+//             navigator.geolocation.getCurrentPosition(
+//                 store_info_fetch,
+//                 handleLocationError,
+//                 { enableHighAccuracy: true } // Optional: Enable high accuracy mode
+//             );
+//         } else {
+//             console.log("Geolocation is not supported by this browser.");
+//         }
+//     });
 });
 
 function handleLocationError(error) {

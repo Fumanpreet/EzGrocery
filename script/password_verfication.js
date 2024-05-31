@@ -44,7 +44,7 @@ function validation(){
             setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
             // changing the className from show to "" . to change the visibility in the css. 
             // now we have to call password encryption method and have to store it in database. 
-            client_verified(email,password);
+            // client_verified(email,password);
             return; 
         }
         else{
