@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="../CSS/utils.css">
     <link rel="stylesheet" href="../CSS/responsive.css">
+    <script src = "EzGrocery/script/password_verification.js"></script>
 </head>
 
 <body>
@@ -44,9 +45,7 @@
                         </a>
 
                         <button class="btn btn-action rounded-pill px-3" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasLogin" aria-controls="offcanvasLogin">Login</button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLogin"
-                            aria-labelledby="offcanvasLoginLabel">
+
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasLoginLabel">Please Login</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
@@ -78,7 +77,8 @@
                                         </div>
                                     </div>
 
-                                    <button class="w-100 btn btn-action btn-lg my-3" type="submit">Login</button>
+                                    <button class="w-100 btn btn-action btn-lg my-3" type="submit" onclick= "validation()">Login</button>
+                                    <div id="snackbar">You have Successfully Logged In</div> <!-- snackbar showing text like toast when logged in successfully-->
                                 </form>
                             </div>
                         </div>
