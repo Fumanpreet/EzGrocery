@@ -23,7 +23,8 @@
                         <img src="../IMG/Logo_cart.svg" alt="Logo_cart" height="60em"><b>EzGrocery</b>
                     </div>
 
-                    <div class="col-xxl-6 col-xl-5 col-lg-6 col-md-9 col-12 col-md-auto mb-2 justify-content-center">
+                    <div
+                        class="middle-search-bar col-xxl-6 col-xl-5 col-lg-6 col-md-9 col-12 col-md-auto mb-2 justify-content-center">
                         <form action="#" data-gtm-form-interact-id="0">
                             <div class="input-group">
                                 <input class="form-control" type="search" placeholder="Search for products"
@@ -39,9 +40,11 @@
                         <a href="#" class="btn btn-header-icon" id="location-button-header" type="button"
                             data-bs-toggle="offcanvas" data-bs-target="#offcanvasLocation"
                             aria-controls="offcanvasLocation">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                            </svg>
                         </a>
 
                         <button class="btn btn-action rounded-pill px-3" type="button" data-bs-toggle="offcanvas"
@@ -92,7 +95,7 @@
                                 <path
                                     d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z" />
                             </svg>
-                        </a>                        
+                        </a>
 
                     </div>
 
@@ -346,11 +349,13 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#sliderCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" id="slider-left-button" type="button" data-bs-target="#sliderCarousel"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#sliderCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" id="slider-right-button" type="button"
+                data-bs-target="#sliderCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -461,7 +466,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Food items / Categories -->
     <section class="food-items">
@@ -851,8 +855,8 @@
             <div class="best-deal-of-day">
                 <h2 class="category-title">Best Deals of the Day</h2>
                 <div class="featurette">
-                    <div class="deal-left-button">
-                        <a class="btn btn-outline-secondary" href="..." role="button">
+                    <div class="deal-left-button" id="best-deal-left-button">
+                        <a class="btn btn-outline-secondary" role="button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-chevron-left" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -860,21 +864,49 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="deal-poster">
-                        <div class="col-md-7">
-                            <h2 class="poster-product-text"> <span class="text-body-secondary">Dairyland
-                                    3.25% Homogenized Milk, 4L</span></h2>
-                            <p class="poster-price-text"><strong>$6.11</strong> |
-                                15¢/100ml
-                            </p>
-                            <a class="btn btn-action site-button" href="..." role="button" ;">+ Add</a>
+                    <div class="best_deals_poster_outerTemplate">
+                        <div class="best-deal-poster">
+                            <div class="col-md-7">
+                                <h2 class="poster-product-text"> <span class="text-body-secondary">Dairyland
+                                        3.25% Homogenized Milk, 4L</span></h2>
+                                <p class="poster-price-text"><strong>$6.11</strong> |
+                                    15¢/100ml
+                                </p>
+                                <a class="btn btn-action site-button" href="..." role="button">+ Add</a>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="../IMG/Milk-Jug.png" alt="Mulk Jug">
+                            </div>
                         </div>
-                        <div class="col-md-5">
-                            <img src="../IMG/Milk-Jug.png" alt="Mulk Jug">
+                        <div class="best-deal-poster disappear">
+                            <div class="col-md-7">
+                                <h2 class="poster-product-text"> <span class="text-body-secondary">
+                                        Coca-Cola 355mL Cans, 12 Pack, 12 x 355 mL</span></h2>
+                                <p class="poster-price-text"><strong>$7.28</strong> |
+                                    17¢/100ml
+                                </p>
+                                <a class="btn btn-action site-button" href="..." role="button" ;">+ Add</a>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="../IMG/Coca-Cola Pack.webp" alt="Coca Cola Pack">
+                            </div>
+                        </div>
+                        <div class="best-deal-poster disappear">
+                            <div class="col-md-7">
+                                <h2 class="poster-product-text">  <span class="text-body-secondary">Great Value Ground
+                                        Cinnamon, 125 g</span></h2>
+                                <p class="poster-price-text"><strong>$2.27</strong> |
+                                    $1.82/100g
+                                </p>
+                                <a class="btn btn-action site-button" href="..." role="button" ;">+ Add</a>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="../IMG/spices.webp" alt="Great Value Ground Cinnamon">
+                            </div>
                         </div>
                     </div>
-                    <div class="deal-right-button">
-                        <a class="btn btn-outline-secondary" href="..." role="button">
+                    <div class="deal-right-button" id="best-deal-right-button">
+                        <a class="btn btn-outline-secondary" role="button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -883,6 +915,23 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-updates">
+        <div class="px-4 my-5 text-center">
+            <h1 class="display-4 fw-bold text-body-emphasis">Upcoming Updates!</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">We are thrilled to announce upcoming updates to our grocery website that will make
+                    finding the best and most affordable groceries nearby easier than ever. Our new advanced price
+                    comparison tool will allow you to quickly compare prices across multiple local stores, while
+                    personalized recommendations will suggest products based on your preferences. An enhanced store
+                    locator will help you find nearby stores with real-time inventory updates and filters for distance,
+                    product availability, and reviews. Smart shopping lists will automatically update with the latest
+                    deals and can be shared with others. Integration with our mobile app will provide on-the-go access
+                    and push notifications for flash sales. Additionally, user reviews and ratings will help you make
+                    informed decisions. Stay tuned for these exciting enhancements!</p>
             </div>
         </div>
     </section>
@@ -955,6 +1004,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="../JavaScript/script.js"></script>
 </body>
 
 </html>

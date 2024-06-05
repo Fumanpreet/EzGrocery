@@ -9,15 +9,15 @@
 }
 
 @media (max-width: 1280px) {
-    .best-deal-of-day .deal-poster {
+    .best-deal-of-day .best-deal-poster {
         padding: 18px;
     }
 
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 41px;
     }
 
-    .best-deal-of-day .deal-poster .poster-product-text {
+    .best-deal-of-day .best-deal-poster .poster-product-text {
         font-size: 1.9rem;
     }
 
@@ -50,10 +50,10 @@
 }
 
 @media (max-width: 1185px) {
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 38px;
     }
-    .best-deal-of-day .deal-poster .poster-product-text {
+    .best-deal-of-day .best-deal-poster .poster-product-text {
         font-size: 1.8rem;
     }
 }
@@ -71,11 +71,11 @@
 }
 
 @media (max-width: 1115px) {
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 36px;
     }
 
-    .best-deal-of-day .deal-poster .poster-product-text {
+    .best-deal-of-day .best-deal-poster .poster-product-text {
         font-size: 1.6rem;
     }
 
@@ -90,7 +90,7 @@
 }
 
 @media (max-width: 1070px) {
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 34px;
     }
 
@@ -109,11 +109,11 @@
         padding-left: 3.4vw;
     }
 
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 31px;
     }
 
-    .best-deal-of-day .deal-poster .poster-product-text {
+    .best-deal-of-day .best-deal-poster .poster-product-text {
         font-size: 1.5rem;
     }
 }
@@ -165,7 +165,7 @@
         padding-left: 1.8vw;
     }
 
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 30px;
     }
 
@@ -214,11 +214,11 @@
         object-fit: cover;
     }
 
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 28px;
     }
 
-    .best-deal-of-day .deal-poster .poster-product-text {
+    .best-deal-of-day .best-deal-poster .poster-product-text {
         font-size: 1.4rem;
     }
 
@@ -245,11 +245,11 @@
         height: 160px;
     }
 
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 26px;
     }
 
-    .best-deal-of-day .deal-poster .poster-product-text {
+    .best-deal-of-day .best-deal-poster .poster-product-text {
         font-size: 1.2rem;
     }
 
@@ -272,7 +272,7 @@
         object-fit: cover;
     }
 
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 25px;
     }
 
@@ -317,7 +317,7 @@
         object-fit: cover;
     }
 
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 34px;
     }
 
@@ -353,7 +353,7 @@
         object-fit: cover;
     }
 
-    .best-deal-of-day .deal-poster .poster-price-text {
+    .best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 30px;
     }
 
@@ -467,7 +467,7 @@
 
 @media (max-width: 555px) {
 
-    .best-deal-of-day .deal-poster {
+    .best-deal-of-day .best-deal-poster {
         display: block;
     }
     .best-deal-of-day img {
@@ -477,15 +477,15 @@
 
 @media (max-width: 555px) {
 
-    .best-deal-of-day .deal-poster .poster-product-text {
+    .best-deal-of-day .best-deal-poster .poster-product-text {
         font-size: 1.1rem;
     }
 
-    best-deal-of-day .deal-poster .poster-price-text {
+    best-deal-of-day .best-deal-poster .poster-price-text {
         font-size: 25px;
     }
 
-    .best-deal-of-day .deal-poster {
+    .best-deal-of-day .best-deal-poster {
         padding: 15px 5px 0px 5px;
     }
 

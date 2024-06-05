@@ -180,7 +180,7 @@
     align-content: center;
 }
 
-.best-deal-of-day .deal-poster{
+.best-deal-of-day .best-deal-poster{
     display: inline-flex;
     border: 2px solid #609966;
     padding: 20px;
@@ -222,7 +222,7 @@
     left: 493px;
 } */
 
-.best-deal-of-day .deal-poster .poster-price-text {
+.best-deal-of-day .best-deal-poster .poster-price-text {
     font-weight: bolder; 
     font-size: 44px;
 }
@@ -230,6 +230,17 @@
 .best-deal-of-day svg {
     height: 50px;
 }
+
+/* .best_deals_poster_outerTemplate {
+    display: inline-flex;
+    width: 54vw;
+    height: 30%;
+    overflow: hidden;
+}
+
+.best-deal-poster {
+    width: 54vw !important;
+} */
 
 /* .best-deal-of-day .left-best-deal {
     position: relative;
