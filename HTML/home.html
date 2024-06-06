@@ -19,7 +19,7 @@
             <div class="container">
                 <header
                     class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3">
-                    <div class="col-md-3 mb-2 ">
+                    <div class="col-md-3 mb-2">
                         <img src="../IMG/Logo_cart.svg" alt="Logo_cart" height="60em"><b>EzGrocery</b>
                     </div>
 
@@ -89,13 +89,134 @@
                         </div>
 
                         <!-- <a href="signup.html" class="btn btn-action rounded-pill px-3">Sign-up</a> -->
-                        <a href="#" class="btn btn-header-icon">
+                        <a class="btn btn-header-icon" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBasket" aria-controls="offcanvasBasket">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-basket-fill"
                                 viewBox="0 0 16 16">
                                 <path
                                     d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z" />
                             </svg>
                         </a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasBasket"
+                            aria-labelledby="offcanvasGroceryBasket">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title mt-3" id="offcanvasGroceryBasket">Grocery Basket</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="list-group list-group-flush">
+                                    <!-- list group -->
+                                    <li class="list-group-item py-3 ps-0 border-top">
+                                        <!-- row -->
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-md-6 col-lg-7">
+                                                <div class="d-flex">
+                                                    <img src="../IMG/Coca-Cola.png"
+                                                        alt="Coca-Cola" class="icon-shape icon-xxl">
+                                                    <div class="ms-3">
+                                                            <h6 class="mb-0 text-item-title">Coca Cola</h6>
+                                                        <span><small class="text-muted">$1.99</small></span>
+                                                        <!-- text -->
+                                                        <div class="mt-2 small lh-1">
+                                                            <a href="#!" class="text-decoration-none text-inherit">
+                                                                <span class="me-1 align-text-bottom">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                                                      </svg>
+                                                                </span>
+                                                                <span class="text-muted">Remove</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- price -->
+                                            <div class="col-2 text-lg-end text-start text-md-end col-md-2">
+                                                <span class="fw-bold price-item">$1.99</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- list group -->
+                                    <li class="list-group-item py-3 ps-0 border-top">
+                                        <!-- row -->
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-md-6 col-lg-7">
+                                                <div class="d-flex">
+                                                    <img src="../IMG/Lays.png"
+                                                        alt="Coca-Cola" class="icon-shape icon-xxl">
+                                                    <div class="ms-3">
+                                                            <h6 class="mb-0 text-item-title">Coca Cola</h6>
+                                                        <span><small class="text-muted">$4.29</small></span>
+                                                        <!-- text -->
+                                                        <div class="mt-2 small lh-1">
+                                                            <a href="#!" class="text-decoration-none text-inherit">
+                                                                <span class="me-1 align-text-bottom">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                                                      </svg>
+                                                                </span>
+                                                                <span class="text-muted">Remove</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- price -->
+                                            <div class="col-2 text-lg-end text-start text-md-end col-md-2">
+                                                <span class="fw-bold price-item">$4.29</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- list group -->
+                                    <li class="list-group-item py-3 ps-0 border-top">
+                                        <!-- row -->
+                                        <div class="row align-items-center">
+                                            <div class="col-6 col-md-6 col-lg-7">
+                                                <div class="d-flex">
+                                                    <img src="../IMG/Surf-Excel.png"
+                                                        alt="Coca-Cola" class="icon-shape icon-xxl">
+                                                    <div class="ms-3">
+                                                            <h6 class="mb-0 text-item-title">Surf-Excel</h6>
+                                                        <span><small class="text-muted">$7.99</small></span>
+                                                        <!-- text -->
+                                                        <div class="mt-2 small lh-1">
+                                                            <a href="#!" class="text-decoration-none text-inherit">
+                                                                <span class="me-1 align-text-bottom">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                                                      </svg>
+                                                                </span>
+                                                                <span class="text-muted">Remove</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- price -->
+                                            <div class="col-2 text-lg-end text-start text-md-end col-md-2">
+                                                <span class="fw-bold price-item">$7.99</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item py-3 ps-0 border-top">
+                                        <div class="order-summary">
+                                            <div>
+                                                <h5>Sub Total</h5>
+                                            </div>
+                                            <div>
+                                                <h5>$16.99</h5>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -893,7 +1014,7 @@
                         </div>
                         <div class="best-deal-poster disappear">
                             <div class="col-md-7">
-                                <h2 class="poster-product-text">  <span class="text-body-secondary">Great Value Ground
+                                <h2 class="poster-product-text"> <span class="text-body-secondary">Great Value Ground
                                         Cinnamon, 125 g</span></h2>
                                 <p class="poster-price-text"><strong>$2.27</strong> |
                                     $1.82/100g

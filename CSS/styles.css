@@ -32,6 +32,29 @@
     margin: auto;
 }
 
+.offcanvas-body .icon-shape {
+    height: 100px;
+}
+
+.offcanvas-body .text-item-title{
+    font-size: 17px;
+    margin-top: 7px;
+    object-fit: cover;
+}
+
+.offcanvas-body .price-item {
+    margin-left: 35px;
+}
+
+.order-summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .list-group-item {
+    justify-content: space-between;
+} */
+
 .slider img {
     height: 400px;
     object-fit: cover;
@@ -55,6 +78,7 @@
 .city-stores .cards {
     display: flex;
     overflow: scroll;
+    /* overflow: hidden; */
     gap: 20px;
 }
 
@@ -194,6 +218,7 @@
 .new-arrivals .category-title {
     display: inline;
 }
+
 
 .new-arrivals a {
     float: right;
