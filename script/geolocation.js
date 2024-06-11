@@ -70,7 +70,6 @@ function geolocation(){
 
     
     // sending a post request
-    const API_KEY = "AIzaSyBdvDbgrbixL_L3pzJQwJCn-51tbpktqdA";
     let p = fetch("https://addressvalidation.googleapis.com/v1:validateAddress",{
         method: 'POST',
         headers: {
