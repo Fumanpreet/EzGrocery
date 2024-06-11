@@ -20,23 +20,83 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("login_button").addEventListener("click", function() {
         validation();
     });
-
-    // Add event listener to location button
-//     document.getElementById("select_location").addEventListener("click", function() {
-//         // showing up a window for user location.. 
-//         console.log("inside function");
-//         if (navigator.geolocation) {
-//             navigator.geolocation.getCurrentPosition(
-//                 store_info_fetch,
-//                 handleLocationError,
-//                 { enableHighAccuracy: true } // Optional: Enable high accuracy mode
-//             );
-//         } else {
-//             console.log("Geolocation is not supported by this browser.");
-//         }
-//     });
 });
 
+function geolocation(){
+    debugger;
+    var postal_code = document.getElementById("validationCustom04").value;
+    var country = document.getElementById("validationCustom01").value;
+    var city = document.getElementById("validationCustom02").value;
+    var region_code;
+    console.log(country);
+    if (country === "Canada")
+        region_code = "CA";
+    else 
+        region_code = "US";
+    const location = {
+        address: {
+            regionCode : region_code,
+            locality: city,
+            administrativeArea: region_code,
+            postalCode: postal_code,
+            addressLines: "",
+        }
+        
+    }
+    // first verify the postal code  / address using google api .  
+    json_data = JSON.stringify(location);
+    // Imports the Addressvalidation library
+    // reference --> https://cloud.google.com/nodejs/docs/reference/addressvalidation/latest
+    // const {AddressValidationClient} = require('@googlemaps/addressvalidation').v1;
+
+    // // Instantiates a client
+    // const addressvalidationClient = new AddressValidationClient();
+
+    // async function callValidateAddress() {
+    // // Construct request
+    // const request = {
+    //     address: {
+    //     regionCode: 'US',
+    //     addressLines: ['1600 Amphitheatre Pkwy', 'Mountain View CA 94040'],
+    //     },
+    // };
+
+    // // Run request
+    // const response = await addressvalidationClient.validateAddress(request);
+    // console.log(response);
+    // }
+
+    // callValidateAddress();
+
+    
+    // sending a post request
+    const API_KEY = "AIzaSyBdvDbgrbixL_L3pzJQwJCn-51tbpktqdA";
+    let p = fetch("https://addressvalidation.googleapis.com/v1:validateAddress",{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: json_data
+    }).then(response => response.json())
+    .then(data => {
+        // Handle the response data here
+        console.log(data);
+        console.log("response");
+    })
+    .catch(error => {
+        var x = document.getElementById("invalid_location_code");
+        // Add the "show" class to DIV
+        x.className = "show";
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        console.log('inValid Address validation response:', data);
+    });
+    let response = p.json;
+    console.log(response);
+
+}
+
+    
 function handleLocationError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:

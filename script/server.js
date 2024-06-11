@@ -1,14 +1,15 @@
+const bodyParser = require("body-parser");
 const { dir } = require("console");
 const express = require("express");
 const path = require("path");
-
+const authentication = require("./password_verification");
 var fs = require('fs');
 
 var router = express.Router();
 const app = express();
 const port = 3001;
 
-
+// app.use(bodyParser.urlencoded({extended: True}));
 // var indexRouter = require('password_verification.js');
 // var geolocation_router = require("geolocation.js");
 app.set('view engine', 'pug');
@@ -32,6 +33,12 @@ app.get("/home", (req, res) => {
 
 });
 
+app.get("/signup",(req,res)=>{
+  res.sendFile(path.join(__dirname,'..', 'HTML', 'signup.html'));
+})
+app.post("/login",(req,res)=> {
+  
+});
 // Start the server
 app.listen(port, () => {
     console.log(`Server started on http://localhost:${port}`);
